@@ -1,6 +1,6 @@
 import React from 'react';
 import Input from './components/Input';
-import TodoItem from './components/todoItem'
+import TodoItem from './components/TodoItem'
 import {useSelector} from 'react-redux'
 import {selectTodoList} from './features/todoSlice'
 
@@ -16,6 +16,7 @@ function App() {
               name={item.item}
               done = {item.done}
               id = {item.id}
+
             />
 
             )
